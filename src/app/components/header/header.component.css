@@ -1,0 +1,16 @@
+.form-control{
+  border-radius: 6px;
+  margin-left: 25px;
+  width: 500px;
+}
+.search-icon{
+  z-index: 10;
+  position: absolute;
+  right: 66%;
+  top: 36%;
+  color: rgb(88, 94, 180);
+}
+.fa-cart-plus{
+  margin-left: 1100px;
+
+}

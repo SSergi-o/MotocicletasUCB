@@ -1,4 +1,33 @@
-.container-fluid{
-  background-color: aquamarine;
-  height: 100vh;
+.cart-top{
+  display: flex;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: papayawhip;
+  background-clip: border-box;
+  position: relative;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: .25rem;
+}
+.itemdata{
+  white-space: nowrap;
+  overflow: hidden; text-overflow:
+  ellipsis;
+   max-width:100ch;
+}
+.card{
+  padding: 20px;
+  margin: 36px;
+}
+.card img{
+  margin-left: 36px;
+  width: 224px;
+  height: 224px;
+  margin-bottom: 16px;
+  transition: 0.3s ease-in-out;
+}
+.card img:hover{
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+
 }
