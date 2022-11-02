@@ -15,12 +15,18 @@
   ellipsis;
    max-width:100ch;
 }
+.description{
+  max-width: fit-content;
+  text-align: justify;
+}
 .card{
+  border-color: rgb(95, 95, 94);
   padding: 20px;
   margin: 36px;
+  box-shadow: 6px 8px 6px rgb(167, 165, 165);
 }
 .card img{
-  margin-left: 36px;
+  margin-left: 34px;
   width: 224px;
   height: 224px;
   margin-bottom: 16px;
@@ -29,5 +35,6 @@
 .card img:hover{
   transition: 0.3s ease-in-out;
   transform: scale(1.1);
+  border-radius: 12px;
 
 }
