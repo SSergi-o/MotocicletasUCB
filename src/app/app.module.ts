@@ -12,6 +12,7 @@ import { ProductosComponent } from './components/productos/productos.component';
 import { ContactosComponent } from './components/contactos/contactos.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
+import { CartComponent } from './components/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HeaderComponent } from './components/header/header.component';
     HomeComponent,
     NavbarComponent,
     ProductosComponent,
-    HeaderComponent
+    HeaderComponent,
+    CartComponent
   ],
   imports: [
     MatCardModule,
@@ -29,6 +31,7 @@ import { HeaderComponent } from './components/header/header.component';
       {path : '', component : HomeComponent},
       { path: 'productos', component: ProductosComponent },
       { path: 'contactos', component: ContactosComponent },
+      { path: 'carrito', component: CartComponent },
     ]),
     BrowserAnimationsModule
   ],
