@@ -1,3 +1,65 @@
+<div class="container">
+  <h1>Comprar Motocicleta</h1>
+
+
+
+
+  <form [formGroup]="form">
+    <div class="container">
+
+        <div class="row" >
+          <div class="col-sm" >
+            <label for="exampleInputPassword1">Nombres</label>
+          <input formControlName="nombre" type="text" class="form-control" placeholder="Nombres">
+          </div>
+
+
+
+          <div class="col-sm">
+            <label for="exampleInputPassword1">Apellidos</label>
+      <input formControlName="apellido" type="text" class="form-control" placeholder="Apellidos">
+          </div>
+        </div>
+
+
+
+
+        <div class="row">
+    <div class="col-sm">
+      <label for="exampleInputPassword1">Correo Electrónico</label>
+      <input formControlName="correo" type="text" class="form-control" placeholder="Correo Electrónico">
+    </div>
+    <div class="col-sm">
+      <label for="exampleInputPassword1">Teléfono</label>
+      <input formControlName="telefono" type="text" class="form-control" placeholder="Número de Teléfono">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <label for="exampleInputPassword1">Dirección</label>
+      <input formControlName="direccion" type="text" class="form-control" placeholder="Dirección">
+    </div>
+    <div class="col">
+      <label for="exampleInputPassword1">Número de Tarjeta</label>
+      <input formControlName="numTarjeta" type="text" class="form-control" placeholder="4074000000000000000">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <label for="exampleInputPassword1">Fecha de Vencimiento</label>
+      <input formControlName="fechaVencimiento" type="text" class="form-control" placeholder="MM/YY">
+    </div>
+    <div class="col">
+      <label for="exampleInputPassword1">Código de Seguridad</label>
+      <input formControlName="codigoSeguridad" type="text" class="form-control" placeholder="CCV">
+    </div>
+  </div>
+    <div class="col">
+      <label for="exampleInputPassword1">Titular en la Tarjeta</label>
+      <input formControlName="nombreTarjeta" type="text" class="form-control" placeholder="Nombre que aparece en la tarjeta">
+    </div>
+  </div>
+</form>
 
 <!-- <div class="cart-item" *ngFor="let item of items">
     <h3>{{item.nombre}}</h3>
@@ -6,11 +68,8 @@
 
   <div class="container h-100 py-5">
     <h1 style="text-align:center ;">Checkout</h1>
-    <div class="s" style="text-align:center;" *ngIf= "items.length == 0">
-      <h1 class="text-center">No hay productos en el carrito!</h1> <br>
-      <button  class="btn btn-primary btn-block btn-lg" routerLink="/productos">Comprar Motos</button>
-    </div>
-    <div class="row d-flex justify-content-center align-items-center h-100" *ngIf="items.length > 0">
+
+    <div class="row d-flex justify-content-center align-items-center h-100" *ngIf="items.length >= 0">
 
       <div class="col">
 
@@ -80,12 +139,18 @@
                   <p class="mb-2">${{subTotal-descuento}}</p>
                 </div>
 
-                <button type="button" class="btn btn-primary btn-block btn-lg">
+                <button type="button" (click)="send()" class="btn btn-primary btn-block btn-lg">
                   <div class="d-flex justify-content-between">
                     <span>Pagar</span>
-                    <span> ${{subTotal-descuento}}</span>
+
+
                   </div>
                 </button>
+                <div *ngIf="form.valid">
+                  <div class="alert alert-success" role="alert">
+                    Compra realizada con éxito!
+                  </div>
+                </div>
 
               </div>
             </div>
@@ -93,7 +158,10 @@
           </div>
         </div>
 
+
       <!-- </div>
     </div>
   </div> -->
 </section>
+
+

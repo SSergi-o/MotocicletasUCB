@@ -10,7 +10,7 @@
           <p class="description">{{producto.descripcion}}</p>
         <p><strong>Precio: </strong> ${{producto.precio}}</p>
 
-        <button class="btn btn-primary" type="button" (click)="addToCart(producto)">Comprar</button>
+        <button class="btn btn-primary" type="button" routerLink="/comprar" (click)="addToCart(producto)">Comprar</button>
       </div>
     </ng-container>
 

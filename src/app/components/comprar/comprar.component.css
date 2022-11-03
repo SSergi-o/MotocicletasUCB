@@ -1,0 +1,14 @@
+input{
+  max-width: 420px;
+  margin: 12px;
+  box-shadow: 2px 3px 2px rgb(187, 186, 186);
+  height: 40px;
+}
+label{
+  margin: 12px;
+  font-size: 20px;
+}
+button{
+  margin: 12px;
+
+}

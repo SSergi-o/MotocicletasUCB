@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule} from '@angular/material/card';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
@@ -13,6 +13,8 @@ import { ContactosComponent } from './components/contactos/contactos.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { CartComponent } from './components/cart/cart.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ComprarComponent } from './components/comprar/comprar.component';
 
 @NgModule({
   declarations: [
@@ -21,17 +23,23 @@ import { CartComponent } from './components/cart/cart.component';
     NavbarComponent,
     ProductosComponent,
     HeaderComponent,
-    CartComponent
+    CartComponent,
+    FooterComponent,
+    ComprarComponent,
+
   ],
   imports: [
+    ReactiveFormsModule,
     MatCardModule,
     BrowserModule,
     AppRoutingModule,
+
     RouterModule.forRoot([
       {path : '', component : HomeComponent},
       { path: 'productos', component: ProductosComponent },
       { path: 'contactos', component: ContactosComponent },
       { path: 'carrito', component: CartComponent },
+      { path: 'comprar', component: ComprarComponent }
     ]),
     BrowserAnimationsModule
   ],
