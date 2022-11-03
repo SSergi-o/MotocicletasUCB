@@ -38,7 +38,6 @@ export class ComprarComponent implements OnInit {
 
   }
   send(){
-    console.log(this.form.value);
     console.log(this.form.valid);
   }
 
