@@ -23,7 +23,7 @@
   border-color: rgb(95, 95, 94);
   padding: 20px;
   margin: 36px;
-  box-shadow: 6px 8px 6px rgb(167, 165, 165);
+  box-shadow: 6px 8px 6px rgb(158, 153, 153);
 }
 .card img{
   margin-left: 34px;
@@ -37,4 +37,9 @@
   transform: scale(1.1);
   border-radius: 12px;
 
+}
+.card:hover{
+  transition: ease-in-out;
+  transform: scale(1.03);
+  box-shadow: 8px 12px 8px rgb(34, 28, 28);
 }

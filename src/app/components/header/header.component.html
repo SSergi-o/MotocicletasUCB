@@ -1,52 +1,36 @@
 <header>
-  <!-- <div class="navbar navbar-dark bg-primary shadow-sm">
-    <div class="navbar-brand align-item-center d-flex">
-      &nbsp;<strong style="font-size: 24px;">MOTOS UCB</strong>&nbsp; -->
 
-      <!-- <button class="btn btn-primary">
-        <i style="font-size:30px;" class="fas fa-cart-plus"></i>
-        <div class="badge bg-danger">3</div>
-      </button> -->
-      <!-- <ul>
-        <li>
-          <a routerLink="">Inicio</a>
-        </li>
-        <li>
-          <a routerLink="/contactos">Contactos</a>
-        </li>
-      </ul> -->
+  <nav class="navbar navbar-expand-lg bg-lg shadow-sm" style="background-color: rgb(77, 52, 189); height: 64px;">
 
-
-
-    <!-- </div>
-  </div> -->
-  <nav class="navbar navbar-expand-lg bg-lg shadow-sm">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Motos UCB</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      &nbsp;  <a routerLink=""><img src="assets/logoNav.svg" style="width: 48px;"></a>
+      <a class="navbar-brand" routerLink="">Motos UCB</a>
+
+
+
+
+
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="">Inicio</a>
+            <a class="nav-link"  routerLink="">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="/productos">Productos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/comprar">Comprar</a>
+            <a class="nav-link" routerLink="/comprar">Comprar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/contactos">Contacto</a>
+            <a class="nav-link" routerLink="/contactos">Contacto</a>
           </li>
         </ul>
 
       </div>
     </div>
     <div cias col-md-6 d-riex jJustity-content-end >
-      <a style="padding: 10px;" class="button fancy-button" routerLink="/carrito">
-      <i class="fas fa-shopping-cart"></i>
+      <a style="padding: 10px;" class="button fancy-button" routerLink="/comprar" style="color: white;" >
+      <img src="assets/carrito.png">
       Checkout({{itemCount()}})
       </a>
       </div>

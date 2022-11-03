@@ -14,3 +14,12 @@
   margin-left: 1100px;
 
 }
+.nav-link,.navbar-brand{
+  color: whitesmoke;
+  border-radius: 12px ;
+}
+.nav-link:hover,.navbar-brand:hover{
+  background-color: rgba(35, 26, 77, 0.486);
+  border-radius: 12px;
+  color: antiquewhite;
+}

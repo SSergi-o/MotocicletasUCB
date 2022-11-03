@@ -7,7 +7,6 @@ import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule} from '@angular/material/card';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProductosComponent } from './components/productos/productos.component';
 import { ContactosComponent } from './components/contactos/contactos.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -20,7 +19,7 @@ import { ComprarComponent } from './components/comprar/comprar.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent,
+
     ProductosComponent,
     HeaderComponent,
     CartComponent,
